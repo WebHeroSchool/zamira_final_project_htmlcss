@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+}
+.wrapper{
+  width: 100%;
+  position: relative;
+}
+.main{
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.main::before{
+  content: '';
+  width: 32%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.header{
+  margin-bottom: 55px;
+}
+.header__logo{
+  color: #fff;
+  font: 500 30px/37px 'Montserrat',arial,helvetica,sans-serif;
+}
+.hamburger-menu{
+  width: 92px;
+  height: 92px;
+  background: #E5E5E5;
+  position: absolute;
+  top: 0;
+  right:0;
+}
+.promo{
+  width: 76%;
+  border: 1px solid red;
+  margin-right: 12%;
+  margin-left: 12%;
+  /* z-index: 1; */
+  padding-left: 50%;
+  padding-top: 94px;
+  background: top left no-repeat url("../img/header-img.png");
+  margin-bottom: 85px;
+  overflow: hidden;
+}
+.promo__title{
+  width: 44%;
+  font: bold 80px/102.4% 'Montserrat',arial,helvetica,sans-serif;
+}
+.promo__description{
+  width: 43%;
+  font: 400 15px/140% 'Montserrat',arial,helvetica,sans-serif;
+}
