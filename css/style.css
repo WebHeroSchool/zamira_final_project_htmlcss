@@ -1,18 +1,16 @@
 body{
-  margin: 0;
-}
-.wrapper{
-  width: 100%;
-  position: relative;
+  margin:0;
+  padding:0;
 }
 .main{
-  background: #fff;
   position: relative;
-  z-index: 1;
+  padding-left: 50px;
+  padding-top: 36px;
+  height:auto;
 }
 .main::before{
   content: '';
-  width: 32%;
+  width: 31.9%;
   height: 100%;
   background: #000;
   position: absolute;
@@ -21,11 +19,23 @@ body{
   z-index: -1;
 }
 .header{
-  margin-bottom: 55px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 97px;
 }
 .header__logo{
+  margin-right: 17%;
+  letter-spacing: 2.5px;
   color: #fff;
   font: 500 30px/37px 'Montserrat',arial,helvetica,sans-serif;
+  text-transform: uppercase;
+}
+.header__lang{
+  color: #fff;
+  background: #000;
+  border: none;
+  font: 500 20px 'Montserrat',arial,helvetica,sans-serif;
 }
 .hamburger-menu{
   width: 92px;
@@ -34,24 +44,339 @@ body{
   position: absolute;
   top: 0;
   right:0;
+  margin-bottom: 77px;
+}
+.menu__btn>span,
+.menu__btn>span:after {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 28px;
+  width: 35px;
+  height: 4px;
+  /* border: 1px solid blue; */
+  background: #000;
+  text-align: center;
+}
+.menu__btn>span:after{
+  content: '';
+  left: 0;
+  position: absolute;
+  top: 8px;
+
+  /* border: 1px solid yellow; */
+}
+input[type="checkbox"]{
+  opacity: 0;
 }
 .promo{
-  width: 76%;
-  border: 1px solid red;
-  margin-right: 12%;
-  margin-left: 12%;
-  /* z-index: 1; */
-  padding-left: 50%;
-  padding-top: 94px;
-  background: top left no-repeat url("../img/header-img.png");
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+
+  position: relative;
+  width: 80.2%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 85px;
-  overflow: hidden;
+  align-items: center;
+}
+.promo::before{
+  content: "";
+  position: absolute;
+  width: 51%;
+  height: 100%;
+  top:0;
+  left:0;
+  background: top left no-repeat url("../img/header-img.png");
 }
 .promo__title{
-  width: 44%;
+  margin-left: 54%;
+  margin-top: 101px;
+  margin-bottom: 4px;
+  width: 33%;
   font: bold 80px/102.4% 'Montserrat',arial,helvetica,sans-serif;
 }
 .promo__description{
-  width: 43%;
+  margin-left: 54%;
+  width: 41%;
   font: 400 15px/140% 'Montserrat',arial,helvetica,sans-serif;
+  margin-bottom: 38px;
+}
+.promo__button{
+  margin-left: 53.6%;
+  /* margin-top: 101px; */
+  border:2px solid #000;
+  margin-right: 4.8%;
+  margin-bottom: 71px;
+  text-transform: uppercase;
+  color: #000;
+  padding: 13px 40px;
+  text-decoration: none;
+  font: 500 13px 'Montserrat',arial,helvetica,sans-serif;
+}
+
+.promo__link{
+  position: relative;
+  width: 21%;
+  margin-bottom: 71px;
+  text-decoration: none;
+  border: none;
+  text-transform: uppercase;
+  color: #000;
+  font: 500 13px 'Montserrat',arial,helvetica,sans-serif;
+}
+.promo__link::after{
+  position: absolute;
+  content: "";
+  width: 43px;
+  height: 100%;
+  right: 0;
+  background: center left no-repeat url("../img/row.svg");
+}
+.contacts{
+  display: inline-block;
+  margin-right: 500px;
+}
+.contacts__item{
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  margin-right: 9px;
+  margin-bottom: 36px;
+}
+.contacts__item:last-child{
+  margin-right: 0;
+}
+.contacts__item_inst{
+  background: #fff center center no-repeat url("../img/instagram.svg");
+}
+.contacts__item_vk{
+  background: #fff center center no-repeat url("../img/vk.svg");
+}
+.contacts__item_fb{
+  background: #fff center center no-repeat url("../img/fb.svg");
+}
+.header__scroll{
+  display: inline-block;
+  width: 27px;
+  height: 46px;
+  background: center center no-repeat url("../img/scroll.svg");
+  vertical-align: top;
+}
+
+.product__section-1{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 168px;
+  background: #FAE8E4;
+  padding-left: 9.5%;
+}
+.product__images{
+  margin-right: 40px;
+  width: 36%;
+}
+.product__img_gray{
+  align-self: flex-start;
+  width: 30.5%;
+  padding-top: 50px;
+  padding-left: 0px;
+  margin-right: 26.4%;
+}
+.product__img_pink{
+  position: absolute;
+  width: 40.3%;
+  padding-top: 115px;
+  padding-left: 96px;
+}
+.product{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 37.3%;
+  flex-wrap: wrap;
+  height: 62%;
+  background: #fff;
+  padding: 45px 50px 42px 55px;
+  margin-right: 75px;
+  margin-bottom: 41px;
+  /* border: 2px solid red; */
+}
+.product__title{
+  font: bold 40px/41px 'Montserrat',arial,helvetica,sans-serif;
+  width: 91%;
+  margin: 0 0 15px;
+}
+.product__subtitle{
+  margin: 0 0 62px;
+  /* font: bold 16px/102.4% 'Montserrat',arial,helvetica,sans-serif; */
+  font: bold 16px/17px 'Montserrat',arial,helvetica,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  /* border: 1px dashed red; */
+}
+.product__description{
+  width: 97%;
+  font: 400 15px/140% 'Montserrat',arial,helvetica,sans-serif;
+  /* border: 1px dashed red; */
+  margin: 0;
+  padding: 0;
+}
+.colors{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 164px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0 68px 0 0;
+}
+.colors__item{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+}
+.colors__item-1{
+  background: #DEDEDE;
+}
+.colors__item-2{
+  background: #F29F9F;
+}
+.colors__item-3{
+  background: #A8BFF9;
+}
+.colors__item-4{
+  background: #90BD8F;
+}
+.colors__item_active{
+  width: 38px;
+  height: 38px;
+}
+.product__price{
+  font: bold 40px/41px 'Montserrat',arial,helvetica,sans-serif;
+  width: 32.8%;
+  margin-bottom: 58px;
+  padding-top: 5px;
+
+}
+.product__count{
+  box-sizing: border-box;
+  width: 100px;
+  font: 500 15px 'Montserrat',arial,helvetica,sans-serif;
+  text-align: center;
+  border: 2px solid #000;
+  padding: 10px 18px;
+  margin: 0 15px 0 0;
+}
+.product__count::before{
+  content: '-';
+  position: relative;
+  right: 19px;
+}
+.product__count::after{
+  content: '+';
+  position: relative;
+  left: 23px;
+}
+.product__button{
+  font: 500 13px 'Montserrat',arial,helvetica,sans-serif;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  background: none;
+  padding: 12px 47px 13px 39px;
+}
+.product__link{
+  position: relative;
+  display: block;
+  width: 37.3%;
+  font: 500 13px/16px 'Montserrat',arial,helvetica,sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  margin-left: 57.3%;
+  margin-bottom: 115px;
+  text-decoration: none;
+}
+.product__link::after{
+  position: absolute;
+  content: "";
+  width: 241px;
+  height: 100%;
+  right: 10px;
+  background: center left no-repeat url("../img/row2.svg");
+}
+.product__section-2{
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  background: #EBE3D8;
+  padding-top: 139px;
+  padding-left: 6%;
+  padding-bottom: 45px;
+}
+.product__section-2>.product__img{
+  width: 57%;
+  position: relative;
+}
+.product__section-2>.product{
+  box-sizing: border-box;
+  padding: 34px 53px 45px 47px;
+  position: absolute;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  top: 255px;
+  left: 53%;
+  width: 30%;
+  background: #FAE8E4;
+  z-index: 1;
+  height: auto;
+  margin-bottom: 37px;;
+}
+.product__section-2> .product__title{
+  /* border: 1px dashed red; */
+  width: 91%;
+}
+.product__section-2>.product__link{
+  position: absolute;
+  top: 700px; /*643px*/
+  left: 400px;
+
+}
+.product__section-2>.product__link::after{
+  position: absolute;
+  content: "";
+  width: 108px;
+  height: 100%;
+  left: 240px;
+  /* right: 0; */
+  background: center right no-repeat url("../img/row2.svg");
+}
+.site__made-by{
+  position: absolute;
+  bottom: 16px;
+  right: 148px;
+  height: 22px;
+  margin-right: 15px;
+}
+.site__made-by::after{
+  content: '';
+  width: 82px;
+  height: 100%;
+  border: 1px solid red;
+  bottom: 0;
+  position: absolute;
+  margin-left: 15px;
+  background: center center no-repeat url("../img/logo_made-by.svg");
 }
