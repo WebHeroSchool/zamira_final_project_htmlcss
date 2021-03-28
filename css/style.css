@@ -98,14 +98,14 @@ input[type="checkbox"]{opacity: 0;}
 .promo__title{
   margin: 101px 0 4px 54%;
   width: 33%;
-  font: bold 80px/102.4% 'Montserrat',arial,helvetica,sans-serif;
+  font: bold 80px/82px 'Montserrat',arial,helvetica,sans-serif;
 }
 
 .promo__description{
   width: 41%;
   font: 400 15px/140% 'Montserrat',arial,helvetica,sans-serif;
   margin-left: 53.9%;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 .promo__button{
