@@ -362,6 +362,7 @@ input[type="checkbox"]{opacity: 0;}
 .product__img{
   width: 61.2%;
   position: relative;
+  margin-bottom: 90px;
 }
 
 .product-and-link-block{
@@ -425,7 +426,7 @@ input[type="checkbox"]{opacity: 0;}
 .site__made-by{
   position: relative;
   height: 22px;
-  padding: 91px 119px 0 0;
+  padding: 0 119px 0 0;
   text-transform: uppercase;
   align-self: flex-end;
   font: bold 12px/14px 'Montserrat',arial,helvetica,sans-serif;
@@ -436,7 +437,7 @@ input[type="checkbox"]{opacity: 0;}
   content: '';
   width: 82px;
   height: 100%;
-  top: 44px;
+  top: 0;
   left: 127px;
   background: center center no-repeat url("../img/logo_made-by.svg");
 }
