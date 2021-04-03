@@ -949,7 +949,13 @@ input[type="checkbox"]{opacity: 0;}
 
 @media (max-width: 370px) {
 
+  .promo{height: 112%;}
+
   .promo__img_mobile{width: 118%;}
+
+  .promo__title{bottom: 28.6%;}
+
+  /* .header__scroll{bottom: 11.3%;} */
 
   .product__img_pink{width: 70%;}
 
@@ -972,5 +978,12 @@ input[type="checkbox"]{opacity: 0;}
   .product__section-2 .product__link {
     width: 46%;
     padding-right: 8%;
+}
 
+@media (max-width: 325px) {
+  .promo__title{
+    font-size: 42px;
+  }
+
+  .promo__img_mobile{width: 145%;}
 }
